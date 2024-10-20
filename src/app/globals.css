@@ -2,21 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+:root{
+  --primary-bg: #f3f4f6;
+  --secondary-bg: #e5e7eb;
+  --primary-text: #111827;
+  --secondary-text: #6b7280;
+  --primary-btn-bg: #2563eb;
+  --primary-btn-text: #ffffff;
+  --secondary-btn-bg: #ffffff;
+  --secondary-btn-text: #2563eb;
+  --border-radius: 10px;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* if dark mode is enabled change the root variables */
+html[dark] {
+  --primary-bg: #111827;
+  --secondary-bg: #1f2937;
+  --primary-text: #d1d5db;
+  --secondary-text: #9ca3af;
+  --primary-btn-bg: #2563eb;
+  --primary-btn-text: #ffffff;
+  --secondary-btn-bg: #ffffff;
+  --secondary-btn-text: #2563eb;
 }
-
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
